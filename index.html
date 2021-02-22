@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Jump to Section</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#What_is_JavaScript?">What is JavaScript?</a></li>
+          <li><a class="nav-link" href="#A_Hello_World!_example">A Hello World! example</a></li>
+          <li><a class="nav-link" href="#Language_basics_crash_course">Language basics crash course</a></li>
+          <li><a class="nav-link" href="#Supercharging_our_website">Supercharging our website</a></li>
+        </ul>
+      </nav>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <body>
+          <header>Introduction</header>
+          <h3>A begginer's guide to JavaScript</h3>
+          <article>
+            <p>
+              JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc. This article helps you get started with JavaScript and furthers your understanding of what is possible.
+            </p>
+            <ul>
+              <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an <b>HTML</b> form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+              <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+            <p>
+              JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+      
+      In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+      
+      JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+          </article>
+        </section>
+        <section class="main-section" id="What_is_JavaScript?">
+          <header>What is JavaScript?</header>
+          <h4>TLDR: It's a front-end programming language.</h4>
+          <article>
+            <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).
+      
+      JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!
+      
+      JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
+            <ul>
+              <li>
+                Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.</li>
+              <li> Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook. </li>
+              <li> Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="A_Hello_World!_example">
+          <header>A Hello World! example</header>
+          <article>
+            <p>
+              JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.
+      
+      However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. (Hello world! is the standard for introductory programming examples.)
+            </p>
+            <ul>
+              <li> Go to your test site and create a new folder named scripts. Within the scripts folder, create a new file called main.js, and save it.</li>
+              <li> In your index.html file, enter the code on a new line, just before the closing .body tag:<code>script src="scripts/main.js">script</code> </li>
+              <li>This is doing the same job as the .link element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li>
+              <li>Make sure the HTML and JavaScript files are saved. Then load index.html in your browser.<code>const myHeading = document.querySelector('h1');
+                myHeading.textContent = 'Hello world!';</code></li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Language_basics_crash_course">
+          <header>Language basics crash course</header>
+          <p>
+            To give you a better understanding of how JavaScript works, let's explain some of the core features of the language. It's worth noting that these features are common to all programming languages. If you master these fundamentals, you have a head start on coding in other languages too!</p>
+          <h1>Variables</h1>
+          <p>
+            Variables are containers that store values. You start by declaring a variable with the var (less recommended, dive deeper for the explanation) or the let keyword, followed by the name you give to the variable.<code>let myVariable;</code></p>
+          <p>So why do we need variables? Variables are necessary to do anything interesting in programming. If values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or change an image displayed in an image gallery.</p>
+          <p>There are a lot more operators to explore, but this is enough for now. See Expressions and operators for a complete list.</p>
+          </article>
+        </section>
+      <section class="main-section" id="Supercharging_our_website">
+        <header>Supercharging our website</header>
+        <p>
+          In this section, you will learn how to use JavaScript and <em>DOM</em> API features to alternate the display of one of two images. This change will happen as a user clicks the displayed image.</p>
+        <ul>
+          <li>Choose an image you want to feature on your example site. Ideally, the image will be the same size as the image you added previously, or as close as possible.</li>
+          <li>Save this image in your images folder.</li>
+          <li>Rename the image<code> firefox2.png.</code></li>
+          <li>Add the JavaScript below to your main.js file. (Also delete your Hello world! JavaScript from the earlier exercise.)</li>
+          <li>Save all files and load index.html in the browser. Now when you click the image, it should change to the other one.</li>
+          </ul>
+        <p>
+          This is what happened. You stored a reference to your <img> element in the myImage variable. Next, you made this variable's onclick event handler property equal to a function with no name (an "anonymous" function). So every time this element is clicked:
+          <ol>
+            <li>The code retrieves the value of the image's src attribute.</li>
+            <li>The code uses a conditional to check if the src value is equal to the path of the original image:<ol>
+              <li>If it is, the code changes the src value to the path of the second image, forcing the other image to be loaded inside the .img element.<code>def code():</code></li>
+              <li>If it isn't (meaning it must already have changed), the src value swaps back to the original image path, to the original state.</li>
+             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repudiandae error enim, consectetur officiis repellendus non facilis facere libero tempora perferendis deserunt ad explicabo! Autem ex atque modi possimus aspernatur?</li> 
+            </ul>
+            </ol>
+        </ol>
+            <p>
+          When you run the example and get the dialog box that prompts you to enter your user name, try pressing the Cancel button. You should end up with a title that reads Mozilla is cool, null. This happens because—when you cancel the prompt—the value is set as null. Null is a special value in JavaScript that refers to the absence of a value.</p>
+        </article>
+      </section>
+      <!-- START FOOTER SECTION -->
+      
+      <footer>
+        <p>
+          **This is just a fake page for practice purposes. Not all the information and details given
+          are real.
+        </p>
+        <p>
+          &copy; Created for
+          <a href="https://www.freecodecamp.com/" target="_blank"
+            >freeCodeCamp <i class="fab fa-free-code-camp"></i
+          ></a>
+        </p>
+      </footer>
+      
+      <!-- END FOOTER SECTION -->
+      
+      </body>
+      </main>
+</body>
+</html>
